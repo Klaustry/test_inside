@@ -5,6 +5,13 @@
  ### Run commands:
     1)sudo docker-compose up -d
     2)sudo docker exec -it vue-inside_app_1 npm run migrate
+    
+ ### All others commands:
+    Stop docker containers
+    1)sudo docker-compose down -v
+    
+    Stop docker containers
+    1)sudo docker exec -it vue-inside_app_1 npm run migrate
 
  ## API requests:
  ### 1)Registartion new user:
