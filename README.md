@@ -2,16 +2,28 @@
 
 ## Getting started
 
- ### Run commands:
+ ### Run application:
     1)sudo docker-compose up -d
     2)sudo docker exec -it vue-inside_app_1 npm run migrate
+ 
+ ### Run test:
+    1)sudo docker exec -it vue-inside_app_1 killall node
+    2)sudo docker exec -it vue-inside_app_1 npm test
     
  ### All others commands:
     Stop docker containers
     1)sudo docker-compose down -v
     
-    Stop docker containers
+    Migrate datatables
     1)sudo docker exec -it vue-inside_app_1 npm run migrate
+    
+    Seeding datatables
+    1)sudo docker exec -it vue-inside_app_1 npx sequelize-cli db:seed:all
+    
+    Reset all migrates
+    1)sudo docker exec -it vue-inside_app_1 npm run migrate:reset
+    
+    * - vue-inside_app_1 - docker container name of app
 
  ## API requests:
  ### 1)Registartion new user:
