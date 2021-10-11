@@ -19,7 +19,6 @@ services:
   app:
     container_name: app
     build: ./inside-app
-    env_file: ./.env
     ports:
       - 6060:6060
     environment:
